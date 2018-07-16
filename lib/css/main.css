@@ -1,0 +1,189 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+body{
+  background: #f7f7f7;
+}
+
+.name{
+  color: #582a1a;
+}
+
+.name:hover{
+  color: #bf9975;
+}
+
+.custom-tooltip+.tooltip>.tooltip-inner {
+  padding: 15px;
+  font-size: 1.2em;
+  background-color: #FFEB6C;
+  color: #374D40;
+}
+
+.order{
+  font-size: 1rem;
+  color: #5a3b27;
+  font-weight: 400;
+}
+
+.navbar{
+  border-bottom: 5px solid #582a1a;
+}
+
+/* --------------------NAV UNDERLINE------------------------------ */
+
+  a:hover{
+    text-decoration: none;
+  }
+
+  .nav-link{
+    color: #582a1a;
+  }
+
+  .nav-link:hover{
+    color: #bf9975;
+  }
+
+  .nav-item{
+  position: relative;
+  color: #582a1a;
+}
+
+  .nav-item:before{
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 2px;
+  bottom: .60em;
+  left: 3px;
+  background-color: #484848;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+  .nav-item:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* ---------------------------------------------------------------- */
+
+.jumbotron {
+  width: 100%;
+  height: 50vh;
+  background: url(https://images2.alphacoders.com/659/thumb-1920-659075.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: 3px 3px 3px black;
+  border-bottom: 5px solid #582a1a;
+}
+
+.welcome{
+  height: 24vh;
+}
+
+.welcome-text{
+  font-size: 4.3rem;
+  margin-top: 13%;
+  color: #582a1a;
+  text-shadow: 2px 2px 7px #100300;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.fav{
+  font-size: .75rem;
+  color: #582a1a;
+  font-weight: 700;
+}
+
+.story{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: url(https://images.alphacoders.com/659/thumb-1920-659072.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: 3px 3px 3px black;
+}
+
+.bborder{
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(to right, #f2f1ef00, #582a1a, #f2f1ef00);
+  border-image-slice: 1;
+  border-radius: 55px;
+  margin-bottom: 1.5%;
+}
+
+.tborder{
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(to right, transparent, #f2f1ef00, #582a1a, #f2f1ef00, transparent);
+    border-image-slice: 1;
+    margin-bottom: 1.5%;
+  }
+
+.food-title{
+  color: #4d362c;
+  text-shadow: 1px 1px 4px white;
+}
+
+.food-description{
+  font-weight: 600;
+}
+
+#menubg{
+  background: url(https://ocdn.eu/pulscms-transforms/1/Ig5ktkqTURBXy8yYzNlZDJhYTlkM2M4MGFjNmMwNTBjMzlhNjFiYWRjMS5qcGVnkpUDAADNEQDNCZCTBc0DUs0B3g) no-repeat;
+  background-size: cover;
+  padding-top: 3%;
+  padding-bottom: 6%;
+  border-top: 5px solid #582b1b;
+  border-bottom: 5px solid #582b1b;
+}
+
+.menu-main{
+  background: #f7f7f79e;
+  border-radius: 17px;
+  margin-top: 3%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+color: #f7f7f7;
+background-color: #4e362b;
+border-color: #dee2e6 #dee2e6 #fff;
+font-weight: 500;
+}
+
+.menu-tab:hover{
+border-color: #e9ecef #e9ecef #dee2e6;
+background: #987b5c;
+color: #f7f7f7;
+}
+
+.menu-line:before{
+width: 100%;
+bottom: 0em;
+left: 0;
+background-color: #f7f7f7;
+}
+
+.btn-brown{
+  color: #f7f7f7;
+  background-color: #2b1f19;
+  border-color: #f7f7f7;
+}
+
+.btn-brown:hover{
+  color: #f7f7f7;
+  background-color: #987b5c;
+  border-color: #f7f7f7;
+}
