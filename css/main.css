@@ -12,11 +12,17 @@ body{
 
 .name{
   color: #582a1a;
-  font-weight: 700;
 }
 
 .name:hover{
   color: #bf9975;
+}
+
+.custom-tooltip+.tooltip>.tooltip-inner {
+  padding: 15px;
+  font-size: 1.2em;
+  background-color: #FFEB6C;
+  color: #374D40;
 }
 
 .order{
@@ -83,7 +89,7 @@ body{
 }
 
 .welcome{
-  height: 25vh;
+  height: 24vh;
 }
 
 .welcome-text{
@@ -97,7 +103,7 @@ body{
 .fav{
   font-size: .75rem;
   color: #582a1a;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .story{
@@ -127,18 +133,57 @@ body{
     margin-bottom: 1.5%;
   }
 
-.breakfast-title{
-  color: #a16b4d;
+.food-title{
+  color: #4d362c;
+  text-shadow: 1px 1px 4px white;
+}
+
+.food-description{
+  font-weight: 600;
 }
 
 #menubg{
   background: url(https://ocdn.eu/pulscms-transforms/1/Ig5ktkqTURBXy8yYzNlZDJhYTlkM2M4MGFjNmMwNTBjMzlhNjFiYWRjMS5qcGVnkpUDAADNEQDNCZCTBc0DUs0B3g) no-repeat;
   background-size: cover;
-  height: 90vh;
+  padding-top: 3%;
+  padding-bottom: 6%;
+  border-top: 5px solid #582b1b;
+  border-bottom: 5px solid #582b1b;
 }
 
 .menu-main{
   background: #f7f7f79e;
   border-radius: 17px;
-  margin-top: 7%;
+  margin-top: 3%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+color: #f7f7f7;
+background-color: #4e362b;
+border-color: #dee2e6 #dee2e6 #fff;
+font-weight: 500;
+}
+
+.menu-tab:hover{
+border-color: #e9ecef #e9ecef #dee2e6;
+background: #987b5c;
+color: #f7f7f7;
+}
+
+.menu-line:before{
+width: 100%;
+bottom: 0em;
+left: 0;
+background-color: #f7f7f7;
+}
+
+.btn-brown{
+  color: #f7f7f7;
+  background-color: #2b1f19;
+  border-color: #f7f7f7;
+}
+
+.btn-brown:hover{
+  color: #f7f7f7;
+  background-color: #987b5c;
+  border-color: #f7f7f7;
 }
