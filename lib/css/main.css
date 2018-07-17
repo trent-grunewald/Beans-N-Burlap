@@ -93,7 +93,7 @@ body{
 }
 
 .welcome-text{
-  font-size: calc(2.25vw + 1vh + 2vmin);
+  font-size: calc(2.25vw + 1vh + 1vmin);
   color: #582a1a;
   text-shadow: 2px 2px 7px #100300;
   font-family: 'Cinzel Decorative', cursive;
