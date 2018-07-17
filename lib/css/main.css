@@ -136,6 +136,8 @@ body{
 .food-title{
   color: #4d362c;
   text-shadow: 1px 1px 4px white;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 600;
 }
 
 .food-description{
