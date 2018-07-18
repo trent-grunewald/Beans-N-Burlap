@@ -236,3 +236,13 @@ img {
     height: 25%;
     width: 30%;
 }
+
+.footer{
+  background: url(https://chromethemer.com/wallpapers/chromebook-wallpapers/download/coffee-beans-3840x2160.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.fab {
+    font-size: 3rem;
+    color: #f7f7f7;
+}
