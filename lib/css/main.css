@@ -93,7 +93,7 @@ body{
 }
 
 .welcome-text{
-  font-size: calc(2.25vw + 1vh + 1vmin);
+  font-size: calc(2.17vw + 1vh + 1vmin);
   color: #582a1a;
   text-shadow: 2px 2px 7px #100300;
   font-family: 'Cinzel Decorative', cursive;
@@ -134,6 +134,7 @@ body{
 
 .pborder{
   border-top: 5px solid #582a1a;
+  border-bottom: 5px solid #582a1a;
 }
 
 .food-title{
@@ -141,6 +142,12 @@ body{
   text-shadow: 1px 1px 4px white;
   font-family: 'Cinzel Decorative', cursive;
   font-weight: 600;
+}
+
+.white-text{
+  color: #582a1a;
+  text-shadow: 2px 2px 7px #100300;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .food-description{
@@ -215,7 +222,6 @@ background-color: #f7f7f7;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
 }
 
 #barista-container{
@@ -228,5 +234,5 @@ img {
     border-style: none;
     border-radius: 50%;
     height: 25%;
-    width: 40%;
+    width: 30%;
 }
