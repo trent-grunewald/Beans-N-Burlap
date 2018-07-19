@@ -37,24 +37,24 @@ body{
 
 /* --------------------NAV UNDERLINE------------------------------ */
 
-  a:hover{
+a:hover{
     text-decoration: none;
   }
 
-  .nav-under{
+.nav-under{
     color: #582a1a;
   }
 
-  .nav-link:hover{
+.nav-link:hover{
     color: #bf9975;
   }
 
-  .nav-item{
+.nav-item{
   position: relative;
   color: #582a1a;
 }
 
-  .nav-item:before{
+.nav-item:before{
   content: "";
   position: absolute;
   width: 95%;
@@ -69,65 +69,38 @@ body{
   transition: all 0.3s ease-in-out 0s;
 }
 
-  .nav-item:hover:before {
+.nav-item:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
 .nav-item-mini{
-position: relative;
-color: #582a1a;
+  position: relative;
+  color: #582a1a;
 }
 
 .nav-item-mini:before{
   content: "";
-    position: absolute;
-    width: 16%;
-    height: 2px;
-    bottom: .60em;
-    right: 1px;
-    background-color: #484848;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+  position: absolute;
+  width: 6rem;
+  height: 2px;
+  bottom: .60em;
+  right: 1px;
+  background-color: #484848;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .nav-item-mini:hover:before {
-visibility: visible;
--webkit-transform: scaleX(1);
-transform: scaleX(1);
-}
-
-/* @media screen and (max-width: 992px) {
-  .nav-item {
-    position: relative;
-    color: #582a1a;
-  }
-
-  .nav-item:before{
-    content: "";
-      position: absolute;
-      width: 22%;
-      height: 2px;
-      bottom: .60em;
-      right: 1px;
-      background-color: #484848;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-  }
-
-  .nav-item:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-  }
-} */
+}
+
 /* ---------------------------------------------------------------- */
 
 #landing{
