@@ -41,7 +41,7 @@ body{
     text-decoration: none;
   }
 
-  .nav-link{
+  .nav-under{
     color: #582a1a;
   }
 
@@ -74,6 +74,60 @@ body{
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.nav-item-mini{
+position: relative;
+color: #582a1a;
+}
+
+.nav-item-mini:before{
+  content: "";
+    position: absolute;
+    width: 16%;
+    height: 2px;
+    bottom: .60em;
+    right: 1px;
+    background-color: #484848;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item-mini:hover:before {
+visibility: visible;
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+}
+
+/* @media screen and (max-width: 992px) {
+  .nav-item {
+    position: relative;
+    color: #582a1a;
+  }
+
+  .nav-item:before{
+    content: "";
+      position: absolute;
+      width: 22%;
+      height: 2px;
+      bottom: .60em;
+      right: 1px;
+      background-color: #484848;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+  }
+
+  .nav-item:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  }
+} */
 /* ---------------------------------------------------------------- */
 
 #landing{
@@ -227,6 +281,7 @@ background-color: #f7f7f7;
 #barista-container{
   background: #f7f7f79e;
   border-radius: 10px;
+  min-height: 100vh;
 }
 
 img {
