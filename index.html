@@ -155,7 +155,7 @@
                                     <h4 class="food-title text-center">The Simpleton</h4>
                                     <p class="food-description">A large single Pancake made from our famous pancake batter and yes... It is big. Sided with Eggs N' Rice, 2 Bacon and 2 sausage.</p>
                                 </div>
-                                <div class="item-price pull-right text-center pb-3 bborder">
+                                <div class="item-price pull-right text-center pb-3">
                                     <strong class="text-large text-brown">$10</strong>
                                     <span class="text-medium ml-2 font-weight-bold">Full Plates Only</span>
                                 </div>
@@ -399,16 +399,24 @@
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Brazil Minas Gerais</h5>
                             <p class="card-text">Low in acidity with a heavy body; these characteristics are often complemented with sweet, chocolate and nutty flavours. Today, we are seeing a greater variety of flavours, including softer cups that have an intense sweetness in the form of caramel and chocolate.</p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                              <form id="order">
+                                <div class="form-row">
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                    <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                    <div class="valid-feedback"></div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                    <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <option value="12oz" id="12oz">12oz</option>
+                                        <option value="16oz" id="16oz">16oz</option>
+                                        <option value="20oz" id="20oz">20oz</option>
+                                      <div class="valid-feedback"></div>
+                                    </select>
+                                  </div>
+                                </div>
+                              </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -419,16 +427,24 @@
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Sulawesi-Kalosi</h5>
                             <p class="card-text">This Sulawesi Kalosi is exceptionally smooth with complex flavors of spice and herbs that are mingled with deep chocolate and caramel undertones. The body is huge and rich with a mouth feel that is full and creamy. The aroma is spicy with notes of oak, and the finish is silky and smooth.</p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                            <form id="order">
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                  <div class="valid-feedback"></div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                      <option value="12oz" id="12oz">12oz</option>
+                                      <option value="16oz" id="16oz">16oz</option>
+                                      <option value="20oz" id="20oz">20oz</option>
+                                    <div class="valid-feedback"></div>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -439,16 +455,24 @@
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Arabian Mocha-Java</h5>
                             <p class="card-text"> The worlds most famous coffee blend, this combination of rich Mocha coffee from Arabia tempered with estate Java remains a popular blend around the world, even with beans from other regions now widely available. And it’s easy to see why when you taste the bittersweet chocolate flavor.</p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                            <form id="order">
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                  <div class="valid-feedback"></div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                      <option value="12oz" id="12oz">12oz</option>
+                                      <option value="16oz" id="16oz">16oz</option>
+                                      <option value="20oz" id="20oz">20oz</option>
+                                    <div class="valid-feedback"></div>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -459,16 +483,24 @@
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Ethiopian Guji</h5>
                             <p class="card-text">This Guji is complex, beautifully fruity and aromatic, just like our fully washed Guji, but with all those classic natural process qualities. It has floral aromatics and sweet tropical fruit notes. These fruits are also present in its acidity which is medium and sweet. Other notes which are present are vanilla, cherry and cocoa.</p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                            <form id="order">
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                  <div class="valid-feedback"></div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                      <option value="12oz" id="12oz">12oz</option>
+                                      <option value="16oz" id="16oz">16oz</option>
+                                      <option value="20oz" id="20oz">20oz</option>
+                                    <div class="valid-feedback"></div>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -479,16 +511,24 @@
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Arabian Mocha Sanani</h5>
                             <p class="card-text">Water process, complex, chocolaty notes. This ancient blend makes a distinguished decaf. Mocca beans from the birthplace of coffee, Ethiopia, come together with their Javanese descendants to create a complex brew as rich as the traditions it stems from. Complex, well-rounded body with chocolaty overtones.</p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                            <form id="order">
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                  <div class="valid-feedback"></div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                      <option value="12oz" id="12oz">12oz</option>
+                                      <option value="16oz" id="16oz">16oz</option>
+                                      <option value="20oz" id="20oz">20oz</option>
+                                    <div class="valid-feedback"></div>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -499,16 +539,24 @@
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Sumatra Aceh Tengah</h5>
                             <p class="card-text"> In contrast to the classic Sumatra profile dominated by notes of earth, cedar, and bell pepper, Ketiara’s coffees often feature fruit tones ranging from cherry and grape to citrus and pineapple, combined with lively acidity and creamy body. This is a coffee almost everyone is guaranteed to enjoy!</p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                            <form id="order">
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                  <div class="valid-feedback"></div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                      <option value="12oz" id="12oz">12oz</option>
+                                      <option value="16oz" id="16oz">16oz</option>
+                                      <option value="20oz" id="20oz">20oz</option>
+                                    <div class="valid-feedback"></div>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -522,16 +570,24 @@
                                 <br>
                                 <br> That being said, don't take our word for it, buy some and try it! We could use the extra money. Also, the beans for this coffee come from the feces of a Asian Palm Civet. Enjoy!
                             </p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                            <form id="order">
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                  <div class="valid-feedback"></div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                      <option value="12oz" id="12oz">12oz</option>
+                                      <option value="16oz" id="16oz">16oz</option>
+                                      <option value="20oz" id="20oz">20oz</option>
+                                    <div class="valid-feedback"></div>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -542,16 +598,24 @@
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Kona</h5>
                             <p class="card-text">100% Kona Coffee beans from Hawaii's Kona Coast. Our Hawaiian Kona Coffee is selected from the best of the Kona Coffee harvests. These big, flavorful Kona Coffee beans are expertly roasted to produce a consistent and truly gourmet coffee when brewed. It will become a favorite. That's a promise!</p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                            <form id="order">
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                  <div class="valid-feedback"></div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                      <option value="12oz" id="12oz">12oz</option>
+                                      <option value="16oz" id="16oz">16oz</option>
+                                      <option value="20oz" id="20oz">20oz</option>
+                                    <div class="valid-feedback"></div>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -562,16 +626,24 @@
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Costa Rican Tarrazu</h5>
                             <p class="card-text">Our medium roast, allows the caramelized sugars to rise to the surface of the beans and highlight a chocolaty flavor with surprising hints of citrusy grapefruit. The resulting cup has a good body and a marked low-tone acidity with an overall flavor that is strong, unique, and extremely delicious flavor.</p>
-                            <span class="font-weight-bold mr-2">QTY</span>
-                            <input type="text" name="qty" value="0" class="col-lg-4 align-left">
-                            <div class="container col-lg-12 mt-2">
-                                <input type="radio" name="size" value="12oz">
-                                <span class="font-weight-bold mr-2">12oz</span>
-                                <input type="radio" name="size" value="16oz">
-                                <span class="font-weight-bold mr-2">16oz</span>
-                                <input type="radio" name="size" value="22oz">
-                                <span class="font-weight-bold mr-2">22oz</span>
-                            </div>
+                            <form id="order">
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                  <div class="valid-feedback"></div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                      <option value="12oz" id="12oz">12oz</option>
+                                      <option value="16oz" id="16oz">16oz</option>
+                                      <option value="20oz" id="20oz">20oz</option>
+                                    <div class="valid-feedback"></div>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
