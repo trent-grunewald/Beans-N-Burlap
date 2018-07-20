@@ -284,6 +284,11 @@ img {
     font-size: 3rem;
     color: #f7f7f7;
 }
+
+#linkedin:hover{
+	color: #00A0DC;
+}
+
 #instagram{
   min-width: 3.1rem;
 }
@@ -320,4 +325,9 @@ img {
 
 .custom-select.is-valid, .form-control.is-valid, .was-validated .custom-select:valid, .was-validated .form-control:valid {
     border-color: #4d362c;
+}
+
+option .test{
+  background: red !important;
+  display: block;
 }

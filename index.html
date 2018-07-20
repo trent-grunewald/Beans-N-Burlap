@@ -13,11 +13,76 @@
 </head>
 
 <body>
+  <!-- MODAL - START -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Your Order:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <div class="container">
+              <form action="#" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control is-valid" placeholder="Your Name" name="name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control is-valid" placeholder="Mobile number" name="phone" required>
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer01" class="font-weight-bold"></label>
+                    <select class="form-control is-valid" id="validationServer01" placeholder="b" value="b" required>
+                      <option value="b" id="b">Breakfast</option>
+                      <option value="l" id="l">Lunch</option>
+                      <option value="c" id="c">Coffee</option>
+                    <div class="valid-feedback"></div>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationServer01" class="font-weight-bold"></label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Estimated arrival" name="time" required>
+                </div>
+              </div>
+
+
+
+                  <div class="main-row">
+                      <label class="input select">
+      <select name="country">
+        <option value="none" selected="" disabled="">Select peices</option>
+
+        <option value="Australia">01</option>
+        <option value="China">02</option>
+        <option value="New Jersey">03</option>
+        <option value="Spain">04</option>
+        <option value="Switzerland">05</option>
+      </select>
+      <i></i>
+    </label>
+                  </div>
+                  <input type="submit" value="Submit">
+              </form>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+  <!-- MODAL END -->
+
+
     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand .d-md-block mr-0">
-                <a href="order.html" data-toggle="tooltip" data-placement="bottom" class="custom-tooltip .d-md-block" title="To ensure a fresh order, please overestimate your 'drive time'.">
+                <a data-toggle="modal" data-placement="bottom" data-target=".bd-example-modal-lg" class="custom-tooltip .d-md-block" title="To ensure a fresh order, please overestimate your 'drive time'.">
                     <h4 class="name text-center">Order Now!</h4>
                     <p class="lead name order">On your way? Don't wait to order.</p>
                 </a>
@@ -60,11 +125,11 @@
     </div>
     <div class="container welcome d-flex">
         <div class="justify-content-center align-self-center mx-auto">
-					<div class="row">
-						<div class="lg-col-12 ">
-							<h1 class="display-1 welcome-text">Welcome to Beans N' Burlap</h1>
-						</div>
-					</div>
+            <div class="row">
+                <div class="lg-col-12 ">
+                    <h1 class="display-1 welcome-text">Welcome to Beans N' Burlap</h1>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid" id="menubg">
@@ -89,8 +154,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Rice Mushrooms Eggs N' Sausage
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Fried Rice, Mushrooms, eggs, sausage, and peppers, all mixed together and spiced to perfection.</p>
                                 </div>
                                 <div class="item-price pull-right text-center bborder pb-3">
@@ -106,8 +171,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Chocolate Coconut Pancakes
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Soft N' ultra fluffy pancakes cooked with Coconut shavings and chocolate chips.</p>
                                 </div>
                                 <div class="item-price pull-right text-center bborder pb-3">
@@ -138,8 +203,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Sausage N' Eggs Taco
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Sausage, Eggs N' Bacon wrapped in a fluffy tortilla like pancake shell made from our famous pancake batter.</p>
                                 </div>
                                 <div class="item-price pull-right text-center bborder pb-3">
@@ -166,8 +231,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Skyscraper French Toast
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Just under 2 inches thick, with optional powdered sugar, coconut shavings, chocolate chips, or peanut butter!</p>
                                 </div>
                                 <div class="item-price pull-right text-center pb-3">
@@ -187,14 +252,14 @@
                     <div class="row">
                         <div class="col-lg-12 bborder">
                             <h2 class="text-center mt-2 food-title">Lunch</h2>
-                            <h6 class="text-center mb-3">WE DON'T DO "SOUP"!</h6>
+                            <h6 class="text-center mb-3">WE DON'T DO "<i>SOUP</i>"!</h6>
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Fitzcarraldo
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Our Skyscraper french toast deep fried and filled with seared Ahi Tuna, crab, cheese and our secret sauce.</p>
                                 </div>
                                 <div class="item-price pull-right text-center bborder pb-3">
@@ -225,8 +290,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">The Mound
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Dripping Macaroni with peppers, bacon, sausage and polish dog bits... Served with 2 pieces of toast smothered in our custom jam</p>
                                 </div>
                                 <div class="item-price pull-right text-center bborder pb-3">
@@ -255,8 +320,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">It's Never too Late
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">A mix of our Rice Mushrooms Eggs N' Sausage with a Skyscraper French Toast or Chocolate Coconut Pancake.</p>
                                 </div>
                                 <div class="item-price pull-right text-center pb-3 bborder">
@@ -270,8 +335,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Goodnight Sweet Prince
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">THE BIG SALAD... One head of lettuce, 5 large eggs, bacon, peppers, jalapenos, cheese, avocado and turkey with our house made ranch</p>
                                 </div>
                                 <div class="item-price pull-right text-center pb-3">
@@ -294,8 +359,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Ethiopian Guji
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Flavors ranging from the sweet lemon candy and floral tea you might expect from the area, to heavy green melon, peach and rose flavors.</p>
                                 </div>
                                 <div class="item-price pull-right text-center bborder pb-3">
@@ -322,8 +387,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Brazil Minas Gerais
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">This coffee has a sweet, body-driven flavor and is strongly recommended for use in your espresso for a roasted hazelnuts flavor.</p>
                                 </div>
                                 <div class="item-price pull-right text-center bborder pb-3">
@@ -350,8 +415,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Sulawesi-Kalosi
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Full-bodied and uniquely complex. Intoxicating herbal, nutty, earthy flavors.</p>
                                 </div>
                                 <div class="item-price pull-right text-center pb-3 bborder">
@@ -365,8 +430,8 @@
                             <div class="menu-item menu-border">
                                 <div class="item-details pull-left">
                                     <h4 class="food-title text-center">Arabian Mocha Sanani
-                                <span class="fav ml-3">(Favorite!)</span>
-                              </h4>
+                                        <span class="fav ml-3">(Favorite!)</span>
+                                    </h4>
                                     <p class="food-description">Lush and spicy like wine, with hints of cocoa and dates. Complex, pungent aroma.</p>
                                 </div>
                                 <div class="item-price pull-right text-center pb-3">
@@ -390,33 +455,34 @@
     <!--end menu container-fluid-->
     <div class="container-fluid d-flex">
         <div class="container justify-content-center align-self-center mt-5 mb-5">
-          <h1 class="display-3 text-center white-text">The Beans</h1>
-          <h4 class="food-description text-center mb-4">All orders are freshly roasted and wrapped in burlap before being sent out.</h4>
+            <h1 class="display-3 text-center white-text">The Beans</h1>
+            <h4 class="food-description text-center mb-4">All orders are freshly roasted and wrapped in burlap before being sent out.</h4>
             <div class="row" id="beans">
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
                         <img class="card-img-top" src="https://ae01.alicdn.com/kf/HTB1t_cjKpXXXXaWXpXXq6xXFXXXF/Logotipo-de-lino-de-c-amo-bolsas-de-asas-de-publicidad-granos-de-caf-de-empaquetado.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Brazil Minas Gerais</h5>
-                            <p class="card-text">Low in acidity with a heavy body; these characteristics are often complemented with sweet, chocolate and nutty flavours. Today, we are seeing a greater variety of flavours, including softer cups that have an intense sweetness in the form of caramel and chocolate.</p>
-                              <form id="order">
+                            <p class="card-text">Low in acidity with a heavy body; these characteristics are often complemented with sweet, chocolate and nutty flavours. Today, we are seeing a greater variety of flavours, including softer cups that have an intense sweetness
+                                in the form of caramel and chocolate.</p>
+                            <form id="order">
                                 <div class="form-row">
-                                  <div class="col-md-6 mb-3">
-                                    <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                    <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                    <div class="valid-feedback"></div>
-                                  </div>
-                                  <div class="col-md-6 mb-3">
-                                    <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                    <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                        <option value="12oz" id="12oz">12oz</option>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <option value="12oz" id="12oz"><span class="test">12oz</span></option>
                                         <option value="16oz" id="16oz">16oz</option>
                                         <option value="20oz" id="20oz">20oz</option>
                                       <div class="valid-feedback"></div>
                                     </select>
-                                  </div>
+                                    </div>
                                 </div>
-                              </form>
+                            </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
@@ -426,24 +492,25 @@
                         <img class="card-img-top" src="http://www.melbasfoodhall.com.au/wp-content/uploads/2018/01/coffee.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Sulawesi-Kalosi</h5>
-                            <p class="card-text">This Sulawesi Kalosi is exceptionally smooth with complex flavors of spice and herbs that are mingled with deep chocolate and caramel undertones. The body is huge and rich with a mouth feel that is full and creamy. The aroma is spicy with notes of oak, and the finish is silky and smooth.</p>
+                            <p class="card-text">This Sulawesi Kalosi is exceptionally smooth with complex flavors of spice and herbs that are mingled with deep chocolate and caramel undertones. The body is huge and rich with a mouth feel that is full and creamy. The aroma
+                                is spicy with notes of oak, and the finish is silky and smooth.</p>
                             <form id="order">
-                              <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                  <div class="valid-feedback"></div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" id="12oz">12oz</option>
                                       <option value="16oz" id="16oz">16oz</option>
                                       <option value="20oz" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
+                                    </div>
                                 </div>
-                              </div>
                             </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
@@ -454,24 +521,25 @@
                         <img class="card-img-top" src="https://st2.depositphotos.com/3944627/8509/i/950/depositphotos_85092514-stock-photo-roasted-coffee-beans-with-burlap.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Arabian Mocha-Java</h5>
-                            <p class="card-text"> The worlds most famous coffee blend, this combination of rich Mocha coffee from Arabia tempered with estate Java remains a popular blend around the world, even with beans from other regions now widely available. And it’s easy to see why when you taste the bittersweet chocolate flavor.</p>
+                            <p class="card-text"> The worlds most famous coffee blend, this combination of rich Mocha coffee from Arabia tempered with estate Java remains a popular blend around the world, even with beans from other regions now widely available. And it’s easy
+                                to see why when you taste the bittersweet chocolate flavor.</p>
                             <form id="order">
-                              <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                  <div class="valid-feedback"></div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" id="12oz">12oz</option>
                                       <option value="16oz" id="16oz">16oz</option>
                                       <option value="20oz" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
+                                    </div>
                                 </div>
-                              </div>
                             </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
@@ -482,24 +550,25 @@
                         <img class="card-img-top" src="https://static1.squarespace.com/static/5450c428e4b01ac0358a22cb/5571f5d7e4b00808365ea401/557c7ba1e4b02f16630b47aa/1518312883299/?format=500w" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Ethiopian Guji</h5>
-                            <p class="card-text">This Guji is complex, beautifully fruity and aromatic, just like our fully washed Guji, but with all those classic natural process qualities. It has floral aromatics and sweet tropical fruit notes. These fruits are also present in its acidity which is medium and sweet. Other notes which are present are vanilla, cherry and cocoa.</p>
+                            <p class="card-text">This Guji is complex, beautifully fruity and aromatic, just like our fully washed Guji, but with all those classic natural process qualities. It has floral aromatics and sweet tropical fruit notes. These fruits are also present
+                                in its acidity which is medium and sweet. Other notes which are present are vanilla, cherry and cocoa.</p>
                             <form id="order">
-                              <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                  <div class="valid-feedback"></div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" id="12oz">12oz</option>
                                       <option value="16oz" id="16oz">16oz</option>
                                       <option value="20oz" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
+                                    </div>
                                 </div>
-                              </div>
                             </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
@@ -510,24 +579,25 @@
                         <img class="card-img-top" src="https://us.123rf.com/450wm/amawasri/amawasri1501/amawasri150101032/35688739-studio-shot-of-coffee-beans-in-a-bag.jpg?ver=6" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Arabian Mocha Sanani</h5>
-                            <p class="card-text">Water process, complex, chocolaty notes. This ancient blend makes a distinguished decaf. Mocca beans from the birthplace of coffee, Ethiopia, come together with their Javanese descendants to create a complex brew as rich as the traditions it stems from. Complex, well-rounded body with chocolaty overtones.</p>
+                            <p class="card-text">Water process, complex, chocolaty notes. This ancient blend makes a distinguished decaf. Mocca beans from the birthplace of coffee, Ethiopia, come together with their Javanese descendants to create a complex brew as rich as
+                                the traditions it stems from. Complex, well-rounded body with chocolaty overtones.</p>
                             <form id="order">
-                              <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                  <div class="valid-feedback"></div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" id="12oz">12oz</option>
                                       <option value="16oz" id="16oz">16oz</option>
                                       <option value="20oz" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
+                                    </div>
                                 </div>
-                              </div>
                             </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
@@ -538,24 +608,25 @@
                         <img class="card-img-top" src="https://thumbs.dreamstime.com/b/roasted-coffee-beans-burlap-sack-fresh-coffee-beans-77431651.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Sumatra Aceh Tengah</h5>
-                            <p class="card-text"> In contrast to the classic Sumatra profile dominated by notes of earth, cedar, and bell pepper, Ketiara’s coffees often feature fruit tones ranging from cherry and grape to citrus and pineapple, combined with lively acidity and creamy body. This is a coffee almost everyone is guaranteed to enjoy!</p>
+                            <p class="card-text"> In contrast to the classic Sumatra profile dominated by notes of earth, cedar, and bell pepper, Ketiara’s coffees often feature fruit tones ranging from cherry and grape to citrus and pineapple, combined with lively acidity
+                                and creamy body. This is a coffee almost everyone is guaranteed to enjoy!</p>
                             <form id="order">
-                              <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                  <div class="valid-feedback"></div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" id="12oz">12oz</option>
                                       <option value="16oz" id="16oz">16oz</option>
                                       <option value="20oz" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
+                                    </div>
                                 </div>
-                              </div>
                             </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
@@ -571,22 +642,22 @@
                                 <br> That being said, don't take our word for it, buy some and try it! We could use the extra money. Also, the beans for this coffee come from the feces of a Asian Palm Civet. Enjoy!
                             </p>
                             <form id="order">
-                              <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                  <div class="valid-feedback"></div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" id="12oz">12oz</option>
                                       <option value="16oz" id="16oz">16oz</option>
                                       <option value="20oz" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
+                                    </div>
                                 </div>
-                              </div>
                             </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
@@ -597,24 +668,25 @@
                         <img class="card-img-top" src="http://cdn.nhanongxanh.vn/wp-content/uploads/2018/07/3830_coffee_beans_bag_scoop_326070713_1200px.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Kona</h5>
-                            <p class="card-text">100% Kona Coffee beans from Hawaii's Kona Coast. Our Hawaiian Kona Coffee is selected from the best of the Kona Coffee harvests. These big, flavorful Kona Coffee beans are expertly roasted to produce a consistent and truly gourmet coffee when brewed. It will become a favorite. That's a promise!</p>
+                            <p class="card-text">100% Kona Coffee beans from Hawaii's Kona Coast. Our Hawaiian Kona Coffee is selected from the best of the Kona Coffee harvests. These big, flavorful Kona Coffee beans are expertly roasted to produce a consistent and truly
+                                gourmet coffee when brewed. It will become a favorite. That's a promise!</p>
                             <form id="order">
-                              <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                  <div class="valid-feedback"></div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" id="12oz">12oz</option>
                                       <option value="16oz" id="16oz">16oz</option>
                                       <option value="20oz" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
+                                    </div>
                                 </div>
-                              </div>
                             </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
@@ -625,24 +697,25 @@
                         <img class="card-img-top" src="http://www.nascas.si/wp-content/uploads/2018/03/kava.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Costa Rican Tarrazu</h5>
-                            <p class="card-text">Our medium roast, allows the caramelized sugars to rise to the surface of the beans and highlight a chocolaty flavor with surprising hints of citrusy grapefruit. The resulting cup has a good body and a marked low-tone acidity with an overall flavor that is strong, unique, and extremely delicious flavor.</p>
+                            <p class="card-text">Our medium roast, allows the caramelized sugars to rise to the surface of the beans and highlight a chocolaty flavor with surprising hints of citrusy grapefruit. The resulting cup has a good body and a marked low-tone acidity
+                                with an overall flavor that is strong, unique, and extremely delicious flavor.</p>
                             <form id="order">
-                              <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                  <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
-                                  <div class="valid-feedback"></div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                  <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                  <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
+                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <div class="valid-feedback"></div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" id="12oz">12oz</option>
                                       <option value="16oz" id="16oz">16oz</option>
                                       <option value="20oz" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
+                                    </div>
                                 </div>
-                              </div>
                             </form>
                             <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
@@ -659,7 +732,7 @@
             <div class="row">
                 <h2 class="display-4 mt-5 text-center col-lg-12 food-title" id="meet">Meet the Baristas</h2>
                 <div class="col-lg-8 mx-auto mb-5 bborder"></div>
-								<nav class="col-lg-12 nav-justified">
+                <nav class="col-lg-12 nav-justified">
                     <div class="nav nav-tabs text-center" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active menu-line menu-tab font-weight-bold" id="nav-ashley-tab" data-toggle="tab" href="#ashley" role="tab" aria-controls="ashley" aria-selected="true">Ashley</a>
                         <a class="nav-item nav-link menu-line menu-tab font-weight-bold" id="nav-leigh-tab " data-toggle="tab" href="#leigh" role="tab" aria-controls="leigh" aria-selected="false">Leigh</a>
@@ -674,111 +747,126 @@
                         <h1 class="food-title my-3 display-5">Ashley</h1>
                         <div class="col-lg-6 mx-auto bborder"></div>
                         <div class="col-lg-9 mx-auto">
-                        <p class="food-description">Yep, shes all natural... While we can't stand to look at her, we can stand the coffee she makes. It is extremely smooth, and she won't tell anyone her secret. She also gets upset if you don't tip, just a warning.</p>
-                      </div>
-                  </div>
+                            <p class="food-description mb-5">Yep, shes all natural... While we can't stand to look at her, we can stand the coffee she makes. It is extremely smooth, and she won't tell anyone her secret. She also gets upset if you don't tip, just a warning.</p>
+                            <a href="www.linkedin.com"><i id="linkedin" class="fab fa-linkedin mx-2"></i></a>
+                            <a href="www.instagram.com"><i id="instagram" class="fab fa-instagram mx-2"></i></a>
+                            <a href="www.facebook.com"><i id="facebook" class="fab fa-facebook mx-2"></i></a>
+                            <a href="www.twitter.com"><i id="twitter" class="fab fa-twitter mx-2"></i></a>
+                            <a href="www.snapchat.com"><i id="snapchat" class="fab fa-snapchat mx-2"></i></a>
+                        </div>
+                    </div>
                     <div class="tab-pane text-center" id="leigh">
                         <img src="lib/css/images/leigh.jpg" alt="crybaby-sissypants Leigh, crying.">
                         <h1 class="food-title my-3 display-5">Leigh</h1>
                         <div class="col-lg-6 mx-auto bborder"></div>
                         <div class="col-lg-9 mx-auto">
-                        <p class="food-description">Leigh cries a lot, no one really knows why, and either does he... It is either out of happiness or sadness. Either way, we all make sure to laugh at him and send him to the back so he doesn't bring everyone else down.</p>
-                      </div>
+                            <p class="food-description mb-5">Leigh cries a lot, no one really knows why, and either does he... It is either out of happiness or sadness. Either way, we all make sure to laugh at him and send him to the back so he doesn't bring everyone else down.</p>
+                            <a href="www.linkedin.com"><i id="linkedin" class="fab fa-linkedin mx-2"></i></a>
+                        </div>
                     </div>
                     <div class="tab-pane text-center" id="ahau">
                         <img src="lib/css/images/ahau.jpg" alt="A black and white picture of Ahau">
                         <h1 class="food-title my-3 display-5">Ahau</h1>
                         <div class="col-lg-6 mx-auto bborder"></div>
                         <div class="col-lg-9 mx-auto">
-                        <p class="food-description">We didn't really hire him, he just showed up one day and started making damn good coffee... So, we might as well pay the man. He is now one of our most requested baristas.</p>
-                      </div>
+                            <p class="food-description mb-5 mt-2">We didn't really hire him, he just showed up one day and started making damn good coffee... So, we might as well pay the man. He is now one of our most requested baristas.</p>
+                            <p class="mb-4"><i>"I don't enjoy the Social Media pap... If you want to ask me something, then ask!"</i>-Ahau</p>
+                        </div>
                     </div>
                     <div class="tab-pane text-center" id="karen">
                         <img src="lib/css/images/karen.jpg" alt="A picture of Karen typing on her mac">
                         <h1 class="food-title my-3 display-5">Karen</h1>
                         <div class="col-lg-6 mx-auto bborder"></div>
                         <div class="col-lg-9 mx-auto">
-                        <p class="food-description">Karen asked us to use a picture of her with her MacBook... Because Karen is better than everyone else, and never wrong, even when she is. It is best to avoid any and all conversations with Karen. Her coffee is ok.</p>
-                      </div>
+                            <p class="food-description mb-5">Karen asked us to use a picture of her with her MacBook... Because Karen is better than everyone else, and never wrong, even when she is. It is best to avoid any and all conversations with Karen. Her coffee is ok.</p>
+                            <a href="www.linkedin.com"><i id="linkedin" class="fab fa-linkedin mx-2"></i></a>
+                            <a href="www.instagram.com"><i id="instagram" class="fab fa-instagram mx-2"></i></a>
+                            <a href="www.facebook.com"><i id="facebook" class="fab fa-facebook mx-2"></i></a>
+                            <a href="www.twitter.com"><i id="twitter" class="fab fa-twitter mx-2"></i></a>
+                            <a href="www.snapchat.com"><i id="snapchat" class="fab fa-snapchat mx-2"></i></a>
+                        </div>
                     </div>
                     <div class="tab-pane text-center" id="jay">
                         <img src="lib/css/images/jay.jpg" alt="A picture of Jay, sleeping">
                         <h1 class="food-title my-3 display-5">Jay</h1>
                         <div class="col-lg-6 mx-auto bborder"></div>
                         <div class="col-lg-9 mx-auto">
-                          <p class="food-description">This is Jay, hes asleep and that is pretty typical for him. It seems he would rather sleep than work 70% of the time, I would guess he was probably supposed to be working when this picture was taken.</p>
-                      </div>
+                            <p class="food-description mb-5">This is Jay, hes asleep and that is pretty typical for him. It seems he would rather sleep than work 70% of the time, I would guess he was probably supposed to be working when this picture was taken.</p>
+                            <a href="www.linkedin.com"><i id="linkedin" class="fab fa-linkedin mx-2"></i></a>
+                            <a href="www.instagram.com"><i id="instagram" class="fab fa-instagram mx-2"></i></a>
+                            <a href="www.snapchat.com"><i id="snapchat" class="fab fa-snapchat mx-2"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid d-flex navbar">
-      <div class="container justify-content-center align-self-center my-5">
-        <h1 class="text-center white-text display-4">Suggestions? Complaint!?</h1>
-        <h4 class="food-description display-5 text-center mb-5">Get in touch with us below and we will reply ASAP!</h4>
-      <form id="contact" method="post" action="contact.php" role="form">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label for="form_name">Name:</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="A name is required.">
-                    <div class="help-block with-errors"></div>
+        <div class="container justify-content-center align-self-center my-5">
+            <h1 class="text-center white-text display-4">Suggestions? Complaint!?</h1>
+            <h4 class="food-description display-5 text-center mb-5">Get in touch with us below and we will reply ASAP!</h4>
+            <form id="contact" method="post" action="contact.php" role="form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_name">Name:</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="A name is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_email">Email:</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email address" required="required" data-error="A valid email address is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_phone">Phone:</label>
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Contact phone number">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label for="form_email">Email:</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email address" required="required" data-error="A valid email address is required.">
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="form_phone">Subject:</label>
+                            <input id="form_subject" type="sub" name="subject" class="form-control" placeholder="Message subject">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label for="form_phone">Phone:</label>
-                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Contact phone number">
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message:</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Your question, suggestion, complaint OR... Loving comment" rows="4" required="required" data-error="You forgot to type a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="submit" class="btn btn-brown btn-send btn-block" value="Send message">
+                    </div>
                 </div>
-            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="form-group">
-                <label for="form_phone">Subject:</label>
-                <input id="form_subject" type="sub" name="subject" class="form-control" placeholder="Message subject">
-                <div class="help-block with-errors"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Message:</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Your question, suggestion, complaint OR... Loving comment" rows="4" required="required" data-error="You forgot to type a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <input type="submit" class="btn btn-brown btn-send btn-block" value="Send message">
-            </div>
-        </div>
+        </form>
     </div>
-  </form>
-</div>
 
-<section class="footer d-flex">
-  <div class="container justify-content-center align-self-center my-5">
-    <div class="row">
-      <div class="col-lg-12 mx-auto text-center">
-        <a href="www.instagram.com"><i id="instagram" class="fab fa-instagram mx-2"></i></a>
-        <a href="www.facebook.com"><i id="facebook" class="fab fa-facebook mx-2"></i></a>
-        <a href="www.twitter.com"><i id="twitter" class="fab fa-twitter mx-2"></i></a>
-        <a href="www.snapchat.com"><i id="snapchat" class="fab fa-snapchat mx-2"></i></a>
-      </div>
-    </div>
-  </div>
+    <section class="footer d-flex">
+        <div class="container justify-content-center align-self-center my-5">
+            <div class="row">
+                <div class="col-lg-12 mx-auto text-center">
+                    <a href="www.instagram.com"><i id="instagram" class="fab fa-instagram mx-2"></i></a>
+                    <a href="www.facebook.com"><i id="facebook" class="fab fa-facebook mx-2"></i></a>
+                    <a href="www.twitter.com"><i id="twitter" class="fab fa-twitter mx-2"></i></a>
+                    <a href="www.snapchat.com"><i id="snapchat" class="fab fa-snapchat mx-2"></i></a>
+                </div>
+            </div>
+        </div>
 
-</div>
+        </div>
 
 
 </body>
