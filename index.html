@@ -38,7 +38,8 @@
               <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="validationServer01" class="font-weight-bold"></label>
-                    <select class="form-control is-valid" id="validationServer01" placeholder="b" value="b" required>
+                    <select class="form-control is-valid " id="modalMenu" placeholder="b" value="b" required>
+                      <optgroup label="Breakfast">
                       <option value="b" id="b">Breakfast</option>
                       <option value="l" id="l">Lunch</option>
                       <option value="c" id="c">Coffee</option>
@@ -51,22 +52,23 @@
                 </div>
               </div>
 
-
-
-                  <div class="main-row">
-                      <label class="input select">
-      <select name="country">
-        <option value="none" selected="" disabled="">Select peices</option>
-
-        <option value="Australia">01</option>
-        <option value="China">02</option>
-        <option value="New Jersey">03</option>
-        <option value="Spain">04</option>
-        <option value="Switzerland">05</option>
-      </select>
-      <i></i>
-    </label>
-                  </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer01" class="font-weight-bold"></label>
+                    <select class="form-control is-valid " id="modalMenu" placeholder="b" value="b" required>
+                      <optgroup label="Breakfast">
+                      <option value="b" id="b">Breakfast</option>
+                      <option value="l" id="l">Lunch</option>
+                      <option value="c" id="c">Coffee</option>
+                    <div class="valid-feedback"></div>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationServer01" class="font-weight-bold"></label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Estimated arrival" name="time" required>
+                </div>
+              </div>
+                  <input type="close" value="Cancel">
                   <input type="submit" value="Submit">
               </form>
           </div>
@@ -324,7 +326,7 @@
                                     </h4>
                                     <p class="food-description">A mix of our Rice Mushrooms Eggs N' Sausage with a Skyscraper French Toast or Chocolate Coconut Pancake.</p>
                                 </div>
-                                <div class="item-price pull-right text-center pb-3 bborder">
+                                <div class="item-price pull-right text-center pb-3">
                                     <strong class="text-large text-brown">$30</strong>
                                     <span class="text-medium ml-2 font-weight-bold">Full Plates Only</span>
                                 </div>
@@ -419,7 +421,7 @@
                                     </h4>
                                     <p class="food-description">Full-bodied and uniquely complex. Intoxicating herbal, nutty, earthy flavors.</p>
                                 </div>
-                                <div class="item-price pull-right text-center pb-3 bborder">
+                                <div class="item-price pull-right text-center pb-3">
                                     <strong class="text-large text-brown">$7,</strong>
                                     <span class="text-medium ml-2 font-weight-bold text-brown">$1 refills</span>
                                 </div>
