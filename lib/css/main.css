@@ -342,8 +342,3 @@ img {
 .custom-select.is-valid, .form-control.is-valid, .was-validated .custom-select:valid, .was-validated .form-control:valid {
     border-color: #4d362c;
 }
-
-option .test{
-  background: red !important;
-  display: block;
-}
