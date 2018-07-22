@@ -13,13 +13,13 @@
 </head>
 
 <body>
-  <!-- MODAL - START -->
+  <!-- MENU MODAL - START -->
   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header modal-head">
               <h5 class="modal-title" id="modalTitle">Your Order:</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close modalX" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -28,49 +28,58 @@
               <form action="#" method="post">
                 <div class="row">
                   <div class="col-md-6">
-                    <input type="text" class="form-control is-valid" placeholder="Your Name" name="name" required>
+                    <label for="validationServer01"></label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Your Name" name="name" id="customerName" required>
                   </div>
                   <div class="col-md-6">
-                    <input type="text" class="form-control is-valid" placeholder="Mobile number" name="phone" required>
+                    <label for="validationServer01"></label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Phone Number" id="customerNumber" name="phone" required>
                   </div>
                 </div>
 
               <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationServer01" class="font-weight-bold"></label>
-                    <select class="form-control is-valid " id="modalMenu" placeholder="b" value="b" required>
-                      <optgroup label="Breakfast">
-                      <option value="b" id="b">Breakfast</option>
-                      <option value="l" id="l">Lunch</option>
-                      <option value="c" id="c">Coffee</option>
+                <div class="col-md-6">
+                    <label for="validationServer01"></label>
+                    <select class="menuType form-control is-valid" id="breakfast">
+                      <option value=''>Select your menu</option>
+                      <option value="Breakfast">Breakfast</option>
+                      <option value="Lunch">Lunch</option>st</option>
                     <div class="valid-feedback"></div>
                   </select>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <label for="validationServer01" class="font-weight-bold"></label>
-                  <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Estimated arrival" name="time" required>
+                <div class="col-md-6">
+                    <label for="validationServer01"></label>
+                    <select class="entree form-control is-valid" id="menuItem" name="menuItem">
+                      <option value=''>Select your entree</option>
+                    <div class="valid-feedback"></div>
+                  </select>
                 </div>
               </div>
 
               <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationServer01" class="font-weight-bold"></label>
-                    <select class="form-control is-valid " id="modalMenu" placeholder="b" value="b" required>
-                      <optgroup label="Breakfast">
-                      <option value="b" id="b">Breakfast</option>
-                      <option value="l" id="l">Lunch</option>
-                      <option value="c" id="c">Coffee</option>
+                <div class="col-md-6">
+                    <label for="validationServer01"></label>
+                    <select class="form-control is-valid" id="coffee" name="coffeeMenu" required>
+                        <option value="">Coffee</option>
+                        <option value="ethiopian guji">Ethiopian Guji</option>
+                        <option value="sumatra aceh tengah">Sumatra Aceh Tengah</option>st</option>
+                        <option value="brazil minas gerais">Brazil Minas Gerais</option>
+                        <option value="arabian mocha-java">Arabian Mocha-Java</option>
+                        <option value="sulawesi-kalosi">Sulawesi-Kalosi</option>
+                        <option value="arabian mocha sanani">Arabian Mocha Sanani</option>
                     <div class="valid-feedback"></div>
                   </select>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <label for="validationServer01" class="font-weight-bold"></label>
+                <div class="col-md-6">
+                  <label for="validationServer01"></label>
                   <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Estimated arrival" name="time" required>
                 </div>
               </div>
-                  <input type="close" value="Cancel">
-                  <input type="submit" value="Submit">
-              </form>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <input class="btn btn-default btn-brown m-3" type="submit" value="Submit">
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -116,6 +125,12 @@
                           <span class="sr-only">(current)</span>
                         </a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold name" id="cart" href="#cart"><i class="fas fa-shopping-cart"></i>
+                          <span class="sr-only">(current)</span>
+                          <span class="itemCount"></span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -134,6 +149,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid" id="menubg">
         <div class="container content-center menu-main">
             <div class="row">
@@ -471,7 +487,7 @@
                                 <div class="form-row">
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="text" class="form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
+                                        <input type="text" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));" class="qty form-control is-valid text-center" id="validationServer01" placeholder="0" value="0" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-6 mb-3">
@@ -485,7 +501,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <a href="#" class="btn btn-brown mt-4 col-sm-12">Add to cart</a>
+                            <a href="#" class="addItem btn btn-brown mt-4 col-sm-12">Add to cart</a>
                         </div>
                     </div>
                 </div>
