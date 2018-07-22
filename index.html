@@ -126,11 +126,12 @@
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link font-weight-bold name" id="cart" href="#cart"><i class="fas fa-shopping-cart"></i>
+                        <a class="nav-link font-weight-bold name" id="cart" href="#cart" data-toggle="modal" data-placement="bottom" data-target=".bd-example-modal-lg2" class="custom-tooltip .d-md-block" title="Click to view your cart"><i class="fas fa-shopping-cart"></i>
                           <span class="sr-only">(current)</span>
                           <span id="itemCount"></span>
                         </a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -153,12 +154,10 @@
     <div class="container-fluid" id="menubg">
         <div class="container content-center menu-main">
             <div class="row">
-                <nav class="col-md-12 nav-justified">
-                    <div class="nav nav-tabs text-center" id="nav-tab" role="tablist">
+                <nav class="col-md-12 nav nav-pills nav-justified nav-tabs nav-fill text-center" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active menu-line menu-tab font-weight-bold" id="nav-breakfast-tab" data-toggle="tab" href="#nav-breakfast" role="tab" aria-controls="nav-breakfast" aria-selected="true">Breakfast</a>
                         <a class="nav-item nav-link menu-line menu-tab font-weight-bold" id="nav-lunch-tab " data-toggle="tab" href="#nav-lunch" role="tab" aria-controls="nav-lunch" aria-selected="false">Lunch</a>
                         <a class="nav-item nav-link menu-line menu-tab font-weight-bold" id="nav-coffee-tab " data-toggle="tab" href="#nav-coffee" role="tab" aria-controls="nav-coffee" aria-selected="false">Coffee</a>
-                    </div>
                 </nav>
             </div>
             <div class="tab-content" id="nav-tabContent">

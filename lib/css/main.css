@@ -104,6 +104,10 @@ a:hover{
 .nav-item-mini{
   position: relative;
   color: #582a1a;
+	-webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: center;
 }
 
 .nav-item-mini:before{
