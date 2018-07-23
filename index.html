@@ -93,91 +93,55 @@
       <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header modal-head">
-              <h5 class="modal-title" id="modalTitle">Your Shopping Cart:</h5>
+              <h5 class="modal-title" id="modalTitle">Your Order:</h5>
               <button type="button" class="close modalX" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-            <div class="container">
-              <form action="#" method="post">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="validationServer01"></label>
-                      <div class="shopping-cart">
-  <div class="column-labels">
-    <label class="product-image">Image</label>
-    <label class="product-details">Product</label>
-    <label class="product-price">Price</label>
-    <label class="product-quantity">Quantity</label>
-    <label class="product-removal">Remove</label>
-    <label class="product-line-price">Total</label>
-  </div>
-
-  <div class="product">
-    <div class="product-image">
-      <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
-    </div>
-    <div class="product-details">
-      <div class="product-title">Dingo Dog Bones</div>
-      <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
-    </div>
-    <div class="product-price">12.99</div>
-    <div class="product-quantity">
-      <input type="number" value="2" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">25.98</div>
-  </div>
-
-  <div class="product">
-    <div class="product-image">
-      <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
-    </div>
-    <div class="product-details">
-      <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
-      <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
-    </div>
-    <div class="product-price">45.99</div>
-    <div class="product-quantity">
-      <input type="number" value="1" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">45.99</div>
-  </div>
-
-  <div class="totals">
-    <div class="totals-item">
-      <label>Subtotal</label>
-      <div class="totals-value" id="cart-subtotal">71.97</div>
-    </div>
-    <div class="totals-item">
-      <label>Tax (5%)</label>
-      <div class="totals-value" id="cart-tax">3.60</div>
-    </div>
-    <div class="totals-item">
-      <label>Shipping</label>
-      <div class="totals-value" id="cart-shipping">15.00</div>
-    </div>
-    <div class="item totals">
-      <label>Grand Total</label>
-      <div class="totals-value" id="cart-total">90.57</div>
-    </div>
-  </div>
-      <button class="checkout">Checkout</button>
-</div>
-                    </div>
-                  </div>
-            </form>
-          </div>
+              <div class="container">
+              	<table id="cart" class="table table-hover table-condensed">
+                  				<thead>
+              						<tr>
+              							<th style="width:50%">Product</th>
+              							<th style="width:10%">Price</th>
+              							<th style="width:8%">Quantity</th>
+              							<th style="width:22%" class="text-center">Subtotal</th>
+              							<th style="width:10%"></th>
+              						</tr>
+              					</thead>
+              					<tbody>
+              						<tr>
+              							<td data-th="Product">
+              								<div class="row">
+              									<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+              									<div class="col-sm-10">
+              										<h4 class="nomargin">Product 1</h4>
+              										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+              									</div>
+              								</div>
+              							</td>
+              							<td data-th="Price">$1.99</td>
+              							<td data-th="Quantity">
+              								<input type="number" class="form-control text-center" value="1">
+              							</td>
+              							<td data-th="Subtotal" class="text-center itemPrice">1.99</td>
+              							<td class="actions" data-th="">
+              								<button class="btn btn-brown btn-sm"><i class="fas fa-sync-alt"></i></button>
+              								<button class="removeProduct btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></i></button>
+              							</td>
+              						</tr>
+              					</tbody>
+              					<tfoot>
+              						<tr>
+              							<td><a href="#" class="btn btn-brown" data-dismiss="modal" aria-label="Close"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+              							<td colspan="2" class="hidden-xs"></td>
+              							<td class="hidden-xs text-center" id="cart-total"><strong>Total $1.99</strong></td>
+              							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+              						</tr>
+              					</tfoot>
+              				</table>
+              </div>
         </div>
       </div>
       </div>
@@ -588,9 +552,9 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                        <option value="12oz" id="12oz"><span class="test">12oz</span></option>
-                                        <option value="16oz" id="16oz">16oz</option>
-                                        <option value="20oz" id="20oz">20oz</option>
+                                        <option value="12oz" class="size" id="12oz"><span class="test">12oz</span></option>
+                                        <option value="16oz" class="size" id="16oz">16oz</option>
+                                        <option value="20oz" class="size" id="20oz">20oz</option>
                                       <div class="valid-feedback"></div>
                                     </select>
                                     </div>
@@ -618,9 +582,9 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                      <option value="12oz" id="12oz">12oz</option>
-                                      <option value="16oz" id="16oz">16oz</option>
-                                      <option value="20oz" id="20oz">20oz</option>
+                                      <option value="12oz" class="size" id="12oz">12oz</option>
+                                      <option value="16oz" class="size" id="16oz">16oz</option>
+                                      <option value="20oz" class="size" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
                                     </div>
@@ -648,9 +612,9 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                      <option value="12oz" id="12oz">12oz</option>
-                                      <option value="16oz" id="16oz">16oz</option>
-                                      <option value="20oz" id="20oz">20oz</option>
+                                      <option value="12oz" class="size" id="12oz">12oz</option>
+                                      <option value="16oz" class="size" id="16oz">16oz</option>
+                                      <option value="20oz" class="size" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
                                     </div>
@@ -678,9 +642,9 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                      <option value="12oz" id="12oz">12oz</option>
-                                      <option value="16oz" id="16oz">16oz</option>
-                                      <option value="20oz" id="20oz">20oz</option>
+                                      <option value="12oz" class="size" id="12oz">12oz</option>
+                                      <option value="16oz" class="size" id="16oz">16oz</option>
+                                      <option value="20oz" class="size" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
                                     </div>
@@ -708,9 +672,9 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                      <option value="12oz" id="12oz">12oz</option>
-                                      <option value="16oz" id="16oz">16oz</option>
-                                      <option value="20oz" id="20oz">20oz</option>
+                                      <option value="12oz" class="size" id="12oz">12oz</option>
+                                      <option value="16oz" class="size" id="16oz">16oz</option>
+                                      <option value="20oz" class="size" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
                                     </div>
@@ -738,9 +702,9 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                      <option value="12oz" id="12oz">12oz</option>
-                                      <option value="16oz" id="16oz">16oz</option>
-                                      <option value="20oz" id="20oz">20oz</option>
+                                      <option value="12oz" class="size" id="12oz">12oz</option>
+                                      <option value="16oz" class="size" id="16oz">16oz</option>
+                                      <option value="20oz" class="size" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
                                     </div>
@@ -770,9 +734,9 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                      <option value="12oz" id="12oz">12oz</option>
-                                      <option value="16oz" id="16oz">16oz</option>
-                                      <option value="20oz" id="20oz">20oz</option>
+                                      <option value="12oz" class="size" id="12oz">12oz</option>
+                                      <option value="16oz" class="size" id="16oz">16oz</option>
+                                      <option value="20oz" class="size" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
                                     </div>
@@ -800,9 +764,9 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                      <option value="12oz" id="12oz">12oz</option>
-                                      <option value="16oz" id="16oz">16oz</option>
-                                      <option value="20oz" id="20oz">20oz</option>
+                                      <option value="12oz" class="size" id="12oz">12oz</option>
+                                      <option value="16oz" class="size" id="16oz">16oz</option>
+                                      <option value="20oz" class="size" id="20oz">20oz</option>
                                     <div class="valid-feedback"></div>
                                   </select>
                                     </div>
@@ -830,11 +794,11 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">SIZE</label>
                                         <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                      <option value="12oz" id="12oz">12oz</option>
-                                      <option value="16oz" id="16oz">16oz</option>
-                                      <option value="20oz" id="20oz">20oz</option>
-                                    <div class="valid-feedback"></div>
-                                  </select>
+                                          <option value="12oz" class="size" id="12oz">12oz</option>
+                                          <option value="16oz" class="size" id="16oz">16oz</option>
+                                          <option value="20oz" class="size" id="20oz">20oz</option>
+                                        <div class="valid-feedback"></div>
+                                      </select>
                                     </div>
                                 </div>
                             </form>
