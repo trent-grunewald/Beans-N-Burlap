@@ -268,13 +268,17 @@ background-color: #f7f7f7;
 }
 
 .card-img-top{
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
   width: 100%;
   height: 35vh;
   object-fit: cover;
+	vertical-align: middle;
+	border-style: none;
 }
 
 #baristas{
-  background: url(https://i1.wp.com/lichfieldsfurniture.co.uk/wp-content/uploads/2016/10/Cafe-background-1.jpg) no-repeat center center;
+  background: url(https://i1.wp.com/lichfieldsfurniture.co.uk/wp-content/uploads/2016/10/Cafe-background-1.jpg) no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -284,10 +288,9 @@ background-color: #f7f7f7;
 #barista-container{
   background: #f7f7f79e;
   border-radius: 10px;
-  min-height: 100vh;
 }
 
-img {
+.faces {
     vertical-align: middle;
     border-style: none;
     border-radius: 50%;
@@ -335,7 +338,13 @@ img {
   color: #fffb00;
 }
 
-
+.cart-img{
+vertical-align: middle;
+border-style: none;
+border-radius: 50%;
+height: 25%;
+width: 3rem;
+}
 
 /* ----------------------------CHANGE IN BOOTSTRAP-------------------------------- */
 .custom-select.is-valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .was-validated .form-control:valid:focus {
