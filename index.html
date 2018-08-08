@@ -123,7 +123,8 @@
               							</td>
               							<td data-th="itemPrice"></td>
               							<td data-th="Quantity">
-              								<input type="number" class="productCount form-control text-center" value="1">
+                                              <input type="number"
+                                              id="cartQty" class="form-control text-center" value="">
               							</td>
               							<td class="actions" data-th="">
               								<button class="btn btn-brown btn-sm"><i class="fas fa-sync-alt"></i></button>
@@ -524,7 +525,9 @@
         </div>
         <!--end menu container-->
         <div class="container">
+                <a data-toggle="modal" data-placement="bottom" data-target=".bd-example-modal-lg" class="custom-tooltip .d-md-block" title="To ensure a fresh order, please overestimate your 'drive time'.">
             <button type="button" class="btn btn-brown btn-lg btn-block mt-3" data-toggle="tooltip" data-placement="top" class="custom-tooltip" title="To ensure a fresh order, please overestimate your 'drive time'.">Order Now!</button>
+            </a>
         </div>
     </div>
     <!--end menu container-fluid-->
@@ -605,7 +608,6 @@
                                 <div class="form-row">
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-6 mb-3">
@@ -635,7 +637,7 @@
                                 <div class="form-row">
                                     <div class="col-md-6 mb-3">
                                         <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01 coffeeCount" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-6 mb-3">
