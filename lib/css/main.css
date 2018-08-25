@@ -80,7 +80,7 @@ a:hover{
   color: #582a1a;
 }
 
-.nav-item:before{
+.full-size:before{
   content: "";
   position: absolute;
   width: 95%;
@@ -95,7 +95,7 @@ a:hover{
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-item:hover:before {
+.full-size:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
