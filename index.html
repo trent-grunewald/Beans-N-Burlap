@@ -13,147 +13,6 @@
 </head>
 
 <body>
-  <!-- MENU MODAL - START -->
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header modal-head">
-              <h5 class="modal-title" id="modalTitle">Your Order:</h5>
-              <button type="button" class="close modalX" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-            <div class="container">
-              <form action="#" method="post">
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="validationServer01"></label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Your Name" name="name" id="customerName" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="validationServer01"></label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Phone Number" id="customerNumber" name="phone" required>
-                  </div>
-                </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                    <label for="validationServer01"></label>
-                    <select class="menuType form-control is-valid" id="breakfast">
-                      <option value=''>Select your menu</option>
-                      <option value="Breakfast">Breakfast</option>
-                      <option value="Lunch">Lunch</option>
-                    <div class="valid-feedback"></div>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                    <label for="validationServer01"></label>
-                    <select class="entree form-control is-valid" id="menuItem" name="menuItem">
-                      <option value=''>Select your entree</option>
-                    <div class="valid-feedback"></div>
-                  </select>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                    <label for="validationServer01"></label>
-                    <select class="form-control is-valid" id="coffee" name="coffeeMenu" required>
-                        <option value="">Coffee</option>
-                        <option value="ethiopian guji">Ethiopian Guji</option>
-                        <option value="sumatra aceh tengah">Sumatra Aceh Tengah</option>st</option>
-                        <option value="brazil minas gerais">Brazil Minas Gerais</option>
-                        <option value="arabian mocha-java">Arabian Mocha-Java</option>
-                        <option value="sulawesi-kalosi">Sulawesi-Kalosi</option>
-                        <option value="arabian mocha sanani">Arabian Mocha Sanani</option>
-                    <div class="valid-feedback"></div>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label for="validationServer01"></label>
-                  <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Estimated arrival" name="time" required>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <input class="btn btn-default btn-brown m-3" type="submit" value="Submit">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      </div>
-  </div>
-
-  <!-- MODAL END -->
-
-  <!-- CART MODAL - START -->
-  <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header modal-head">
-              <h5 class="modal-title" id="modalTitle">Your Order:</h5>
-              <button type="button" class="close modalX" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-              	<table id="cart" class="table">
-                  				<thead>
-              						<tr>
-              							<th style="width:50%">Product</th>
-              							<th style="width:10%">Size</th>
-              							<th style="width:8%">Quantity</th>
-              							<th style="width:22%" class="text-center">Subtotal</th>
-              							<th style="width:10%"></th>
-              						</tr>
-              					</thead>
-              					<tbody>
-              						<tr>
-              							<td data-th="Product">
-              								<div class="row">
-              									<div class="col-sm-8">
-                                  <div class="hidden-xs" class="cart-img" id="cartPic"><img  class="cart-img" src=""/></div>
-              										<h4 class="nomargin" id="cartProduct"></h4>
-              										<p id="cartDesc"></p>
-              									</div>
-              								</div>
-                                          </td>
-                                          <td data-th="Size">
-                                            <select id="cartSize" class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
-                                                <option value="12oz" class="size" id="12oz"><span class="test">12oz</span></option>
-                                                <option value="16oz" class="size" id="16oz">16oz</option>
-                                                <option value="20oz" class="size" id="20oz">20oz</option>
-                                              <div class="valid-feedback"></div>
-                                            </select>
-                                          </td>
-              							<td data-th="Quantity">
-                                              <input type="number"
-                                              id="cartQty" class="form-control text-center" value="">
-              							</td>
-              							<td class="actions" data-th="">
-              								<button class="btn btn-brown btn-sm"><i class="fas fa-sync-alt"></i></button>
-              								<button class="removeProduct btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></i></button>
-              							</td>
-              						</tr>
-              					</tbody>
-              					<tfoot>
-              						<tr>
-              							<td><a href="#" class="btn btn-brown" data-dismiss="modal" aria-label="Close"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
-              							<td colspan="2" class="hidden-xs"></td>
-              							<td class="hidden-xs text-center" id="cart-total"><strong></strong></td>
-              							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
-              						</tr>
-              					</tfoot>
-              				</table>
-              </div>
-        </div>
-      </div>
-      </div>
-  </div>
-  <!-- MODAL END -->
 
     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg">
@@ -545,8 +404,8 @@
             <div class="row" id="beans">
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
-                    <div class="card m-3" id="coffee1">
-                        <img class="card-img-top" id="coffeePic1" src="lib/css/images/coffee1.jpg" alt="Card image cap">
+                    <div class="card m-3">
+                        <img class="card-img-top" id="coffeePic1" src="lib/css/images/coffee1.jpg" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="coffeeTitle card-title food-title">Brazil Minas Gerais</h5>
                             <p><span class="coffeeDesc1">Low in acidity with a heavy body; these characteristics are often complemented with sweet, chocolate and nutty flavours.</span> Today, we are seeing a greater variety of flavours, including softer cups that have an intense sweetness
@@ -576,7 +435,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
-                        <img class="card-img-top" src="http://www.melbasfoodhall.com.au/wp-content/uploads/2018/01/coffee.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="http://www.melbasfoodhall.com.au/wp-content/uploads/2018/01/coffee.jpg" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Sulawesi-Kalosi</h5>
                             <p class="card-text">This Sulawesi Kalosi is exceptionally smooth with complex flavors of spice and herbs that are mingled with deep chocolate and caramel undertones. The body is huge and rich with a mouth feel that is full and creamy. The aroma
@@ -606,7 +465,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
-                        <img class="card-img-top" src="https://st2.depositphotos.com/3944627/8509/i/950/depositphotos_85092514-stock-photo-roasted-coffee-beans-with-burlap.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="https://st2.depositphotos.com/3944627/8509/i/950/depositphotos_85092514-stock-photo-roasted-coffee-beans-with-burlap.jpg" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Arabian Mocha-Java</h5>
                             <p class="card-text"> The worlds most famous coffee blend, this combination of rich Mocha coffee from Arabia tempered with estate Java remains a popular blend around the world, even with beans from other regions now widely available. And it’s easy
@@ -636,7 +495,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
-                        <img class="card-img-top" src="https://static1.squarespace.com/static/5450c428e4b01ac0358a22cb/5571f5d7e4b00808365ea401/557c7ba1e4b02f16630b47aa/1518312883299/?format=500w" alt="Card image cap">
+                        <img class="card-img-top" src="https://static1.squarespace.com/static/5450c428e4b01ac0358a22cb/5571f5d7e4b00808365ea401/557c7ba1e4b02f16630b47aa/1518312883299/?format=500w" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Ethiopian Guji</h5>
                             <p class="card-text">This Guji is complex, beautifully fruity and aromatic, just like our fully washed Guji, but with all those classic natural process qualities. It has floral aromatics and sweet tropical fruit notes. These fruits are also present
@@ -666,7 +525,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
-                        <img class="card-img-top" src="https://us.123rf.com/450wm/amawasri/amawasri1501/amawasri150101032/35688739-studio-shot-of-coffee-beans-in-a-bag.jpg?ver=6" alt="Card image cap">
+                        <img class="card-img-top" src="https://us.123rf.com/450wm/amawasri/amawasri1501/amawasri150101032/35688739-studio-shot-of-coffee-beans-in-a-bag.jpg?ver=6" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Arabian Mocha Sanani</h5>
                             <p class="card-text">Water process, complex, chocolaty notes. This ancient blend makes a distinguished decaf. Mocca beans from the birthplace of coffee, Ethiopia, come together with their Javanese descendants to create a complex brew as rich as
@@ -696,7 +555,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
-                        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/roasted-coffee-beans-burlap-sack-fresh-coffee-beans-77431651.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/roasted-coffee-beans-burlap-sack-fresh-coffee-beans-77431651.jpg" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Sumatra Aceh Tengah</h5>
                             <p class="card-text"> In contrast to the classic Sumatra profile dominated by notes of earth, cedar, and bell pepper, Ketiara’s coffees often feature fruit tones ranging from cherry and grape to citrus and pineapple, combined with lively acidity
@@ -726,7 +585,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
-                        <img class="card-img-top" src="https://static1.squarespace.com/static/541a230ce4b0bb0e99120b6e/55c2bf4be4b02ce3fcfdb04f/5622e017e4b09501ec5a3976/1445126172168/kars-coffee-roasted-beans-in-burlap-bag.jpg?format=750w" alt="Card image cap">
+                        <img class="card-img-top" src="https://static1.squarespace.com/static/541a230ce4b0bb0e99120b6e/55c2bf4be4b02ce3fcfdb04f/5622e017e4b09501ec5a3976/1445126172168/kars-coffee-roasted-beans-in-burlap-bag.jpg?format=750w" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Kopi Luwak</h5>
                             <p class="card-text">Stale, average, plain old coffee for twenty times the price! Just buy Folgers...
@@ -758,7 +617,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
-                        <img class="card-img-top" src="http://cdn.nhanongxanh.vn/wp-content/uploads/2018/07/3830_coffee_beans_bag_scoop_326070713_1200px.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="http://cdn.nhanongxanh.vn/wp-content/uploads/2018/07/3830_coffee_beans_bag_scoop_326070713_1200px.jpg" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Kona</h5>
                             <p class="card-text">100% Kona Coffee beans from Hawaii's Kona Coast. Our Hawaiian Kona Coffee is selected from the best of the Kona Coffee harvests. These big, flavorful Kona Coffee beans are expertly roasted to produce a consistent and truly
@@ -788,7 +647,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
                     <div class="card m-3">
-                        <img class="card-img-top" src="http://www.nascas.si/wp-content/uploads/2018/03/kava.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="http://www.nascas.si/wp-content/uploads/2018/03/kava.jpg" alt="picture of coffee beans in burlap">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Costa Rican Tarrazu</h5>
                             <p class="card-text">Our medium roast, allows the caramelized sugars to rise to the surface of the beans and highlight a chocolaty flavor with surprising hints of citrusy grapefruit. The resulting cup has a good body and a marked low-tone acidity
@@ -962,6 +821,148 @@
         </div>
 
         </div>
+
+        <!-- MENU MODAL - START -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header modal-head">
+            <h5 class="modal-title" id="modalTitle">Your Order:</h5>
+            <button type="button" class="close modalX" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div class="container">
+            <form action="#" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="validationServer01"></label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Your Name" name="name" id="customerName" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationServer01"></label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Phone Number" id="customerNumber" name="phone" required>
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                  <label for="validationServer01"></label>
+                  <select class="menuType form-control is-valid" id="breakfast">
+                    <option value=''>Select your menu</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                  <div class="valid-feedback"></div>
+                </select>
+              </div>
+              <div class="col-md-6">
+                  <label for="validationServer01"></label>
+                  <select class="entree form-control is-valid" id="menuItem" name="menuItem">
+                    <option value=''>Select your entree</option>
+                  <div class="valid-feedback"></div>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                  <label for="validationServer01"></label>
+                  <select class="form-control is-valid" id="coffee" name="coffeeMenu" required>
+                      <option value="">Coffee</option>
+                      <option value="ethiopian guji">Ethiopian Guji</option>
+                      <option value="sumatra aceh tengah">Sumatra Aceh Tengah</option>st</option>
+                      <option value="brazil minas gerais">Brazil Minas Gerais</option>
+                      <option value="arabian mocha-java">Arabian Mocha-Java</option>
+                      <option value="sulawesi-kalosi">Sulawesi-Kalosi</option>
+                      <option value="arabian mocha sanani">Arabian Mocha Sanani</option>
+                  <div class="valid-feedback"></div>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="validationServer01"></label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Estimated arrival" name="time" required>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <input class="btn btn-default btn-brown m-3" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<!-- MODAL END -->
+
+<!-- CART MODAL - START -->
+<div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header modal-head">
+            <h5 class="modal-title" id="modalTitle">Your Order:</h5>
+            <button type="button" class="close modalX" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+                <table id="cart" class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:50%">Product</th>
+                                        <th style="width:10%">Size</th>
+                                        <th style="width:8%">Quantity</th>
+                                        <th style="width:22%" class="text-center">Subtotal</th>
+                                        <th style="width:10%"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-th="Product">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                <div class="hidden-xs" class="cart-img" id="cartPic"><img  class="cart-img" src=""/></div>
+                                                    <h4 class="nomargin" id="cartProduct"></h4>
+                                                    <p id="cartDesc"></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-th="Size">
+                                          <select id="cartSize" class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                              <option value="12oz" class="size" id="12oz"><span class="test">12oz</span></option>
+                                              <option value="16oz" class="size" id="16oz">16oz</option>
+                                              <option value="20oz" class="size" id="20oz">20oz</option>
+                                            <div class="valid-feedback"></div>
+                                          </select>
+                                        </td>
+                                        <td data-th="Quantity">
+                                            <input type="number"
+                                            id="cartQty" class="form-control text-center" value="">
+                                        </td>
+                                        <td class="actions" data-th="">
+                                            <button class="btn btn-brown btn-sm"><i class="fas fa-sync-alt"></i></button>
+                                            <button class="removeProduct btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><a href="#" class="btn btn-brown" data-dismiss="modal" aria-label="Close"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                                        <td colspan="2" class="hidden-xs"></td>
+                                        <td class="hidden-xs text-center" id="cart-total"><strong></strong></td>
+                                        <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+            </div>
+      </div>
+    </div>
+    </div>
+</div>
+<!-- MODAL END -->
 
 
 </body>
