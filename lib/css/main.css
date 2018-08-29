@@ -80,7 +80,7 @@ a:hover{
   color: #582a1a;
 }
 
-.full-size:before{
+.nav-item:before{
   content: "";
   position: absolute;
   width: 95%;
@@ -95,7 +95,7 @@ a:hover{
   transition: all 0.3s ease-in-out 0s;
 }
 
-.full-size:hover:before {
+.nav-item:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -116,7 +116,7 @@ a:hover{
   width: 6rem;
   height: 2px;
   bottom: .60em;
-  right: 1px;
+  right: 0px;
   background-color: #484848;
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -155,6 +155,55 @@ a:hover{
   text-shadow: 2px 2px 7px #100300;
   font-family: 'Cinzel Decorative', cursive;
 }
+
+.collapsed-welcome{
+  display: none;
+}
+  @media (max-width: 991px) {
+    .collapsed-welcome{
+      font-size: 2rem;
+      color: #582a1a;
+      text-shadow: 2px 2px 7px #100300;
+      font-family: 'Cinzel Decorative', cursive;
+      display:unset;
+      float: left;
+      text-align: center;
+      margin-top: 10%;
+    }
+    .collapsed-welcome .br{
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .collapsed-welcome{
+      font-size: 2rem;
+      color: #582a1a;
+      text-shadow: 2px 2px 7px #100300;
+      font-family: 'Cinzel Decorative', cursive;
+      display:unset;
+      float: left;
+      text-align: center;
+      margin-top: 0;
+    }
+    .collapsed-welcome .br{
+      display: unset;
+    }
+  }
+
+  @media (max-width: 365px) {
+    .collapsed-welcome{
+      font-size: 1.5rem;
+      color: #582a1a;
+      text-shadow: 2px 2px 7px #100300;
+      font-family: 'Cinzel Decorative', cursive;
+      display:unset;
+      float: left;
+      text-align: center;
+      margin-top: 5%;
+    }
+  }
+
 
 .fav{
   font-size: .75rem;
@@ -267,6 +316,7 @@ background-color: #f7f7f7;
   color: #4e362b;
 }
 
+
 .card-img-top{
 	border-bottom-left-radius: 50%;
 	border-bottom-right-radius: 50%;
@@ -347,8 +397,9 @@ width: 3rem;
 }
 
 #cartSize{
-  width: 5rem;
+  width:5rem;
 }
+
 /* ----------------------------CHANGE IN BOOTSTRAP-------------------------------- */
 .custom-select.is-valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .was-validated .form-control:valid:focus {
     border-color: #4d362c;
