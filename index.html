@@ -27,19 +27,16 @@
               <div class="container">
                 <form action="#" method="post">
                   <div class="row">
-                    <div class="col-md-6">
-                      <label for="validationServer01"></label>
-                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Your Name" name="name" id="customerName" required>
+                    <div class="col-md-6 mb-3">
+                      <input type="text" class="form-control is-valid" placeholder="Your Name" name="name" id="customerName" required>
                     </div>
-                    <div class="col-md-6">
-                      <label for="validationServer01"></label>
-                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Phone Number" id="customerNumber" name="phone" required>
+                    <div class="col-md-6 mb-3">
+                      <input type="text" class="form-control is-valid" placeholder="Phone Number" id="customerNumber" name="phone" required>
                     </div>
                   </div>
     
                 <div class="row">
-                  <div class="col-md-6">
-                      <label for="validationServer01"></label>
+                  <div class="col-md-6 mb-3">
                       <select class="menuType form-control is-valid" id="breakfast">
                         <option value=''>Select your menu</option>
                         <option value="Breakfast">Breakfast</option>
@@ -47,8 +44,7 @@
                       <div class="valid-feedback"></div>
                     </select>
                   </div>
-                  <div class="col-md-6">
-                      <label for="validationServer01"></label>
+                  <div class="col-md-6 mb-3">
                       <select class="entree form-control is-valid" id="menuItem" name="menuItem">
                         <option value=''>Select your entree</option>
                       <div class="valid-feedback"></div>
@@ -57,8 +53,7 @@
                 </div>
     
                 <div class="row">
-                  <div class="col-md-6">
-                      <label for="validationServer01"></label>
+                  <div class="col-md-6 mb-3">
                       <select class="form-control is-valid" id="coffee" name="coffeeMenu" required>
                           <option value="">Coffee</option>
                           <option value="ethiopian guji">Ethiopian Guji</option>
@@ -70,9 +65,8 @@
                       <div class="valid-feedback"></div>
                     </select>
                   </div>
-                  <div class="col-md-6">
-                    <label for="validationServer01"></label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Estimated arrival" name="time" required>
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control is-valid" placeholder="Estimated arrival" name="time" required>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -122,7 +116,7 @@
                                                 </div>
                                             </td>
                                             <td data-th="Size">
-                                              <select id="cartSize" class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                              <select id="cartSize" class="size form-control is-valid" placeholder="12oz" value="12oz" required>
                                                   <option value="12oz" class="size" id="12oz"><span class="test">12oz</span></option>
                                                   <option value="16oz" class="size" id="16oz">16oz</option>
                                                   <option value="20oz" class="size" id="20oz">20oz</option>
@@ -546,7 +540,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card m-3" id="coffee1">
-                        <img class="card-img-top" id="coffeePic1" src="lib/css/images/coffee1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="lib/css/images/coffee1.jpg">
                         <div class="card-body flex-fill text-center">
                             <h5 class="coffeeTitle card-title food-title">Brazil Minas Gerais</h5>
                             <p><span class="coffeeDesc">Low in acidity with a heavy body; these characteristics are often complemented with sweet, chocolate and nutty flavours.</span> Today, we are seeing a greater variety of flavours, including softer cups that have an intense sweetness
@@ -554,13 +548,12 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="cartInput col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number"  min="1" class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <label class="font-weight-bold">QTY</label>
+                                        <input type="number"  min="1" class="qty form-control is-valid text-center" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
                                         <option value="12oz" class="size" id="12oz"><span class="test">12oz</span></option>
                                         <option value="16oz" class="size" id="16oz">16oz</option>
                                         <option value="20oz" class="size" id="20oz">20oz</option>
@@ -574,9 +567,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card m-3 flex-fill" id="coffee2">
-                        <img class="card-img-top" src="http://www.melbasfoodhall.com.au/wp-content/uploads/2018/01/coffee.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="http://www.melbasfoodhall.com.au/wp-content/uploads/2018/01/coffee.jpg"> 
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Sulawesi-Kalosi</h5>
                             <p><span class="coffeeDesc">This Sulawesi Kalosi is exceptionally smooth with complex flavors of spice and herbs that are mingled with deep chocolate and caramel undertones.</span> The body is huge and rich with a mouth feel that is full and creamy. The aroma
@@ -584,13 +577,13 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="cartInput col-md-12 mb-3">
-                                        <label for="validationServer01" name="qty" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <label name="qty" class="font-weight-bold">QTY</label>
+                                        <input type="number" min="1" class="qty form-control is-valid text-center" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <label class="font-weight-bold">SIZE</label>
+                                        <select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" class="size" id="12oz">12oz</option>
                                       <option value="16oz" class="size" id="16oz">16oz</option>
                                       <option value="20oz" class="size" id="20oz">20oz</option>
@@ -606,7 +599,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card m-3" id="coffee3">
-                        <img class="card-img-top" src="https://st2.depositphotos.com/3944627/8509/i/950/depositphotos_85092514-stock-photo-roasted-coffee-beans-with-burlap.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="https://st2.depositphotos.com/3944627/8509/i/950/depositphotos_85092514-stock-photo-roasted-coffee-beans-with-burlap.jpg">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Arabian Mocha-Java</h5>
                             <p><span class="coffeeDesc"> The worlds most famous coffee blend, this combination of rich Mocha coffee from Arabia tempered with estate Java remains a popular blend around the world</span>, even with beans from other regions now widely available. And it’s easy
@@ -614,13 +607,13 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" max="40" class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <label class="font-weight-bold">QTY</label>
+                                        <input type="number" min="1" max="40" class="qty form-control is-valid text-center"  value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <label class="font-weight-bold">SIZE</label>
+                                        <select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" class="size" id="12oz">12oz</option>
                                       <option value="16oz" class="size" id="16oz">16oz</option>
                                       <option value="20oz" class="size" id="20oz">20oz</option>
@@ -636,7 +629,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card m-3 flex-fill" id="coffee4">
-                        <img class="card-img-top" src="https://static1.squarespace.com/static/5450c428e4b01ac0358a22cb/5571f5d7e4b00808365ea401/557c7ba1e4b02f16630b47aa/1518312883299/?format=500w" alt="Card image cap">
+                        <img class="card-img-top" src="https://static1.squarespace.com/static/5450c428e4b01ac0358a22cb/5571f5d7e4b00808365ea401/557c7ba1e4b02f16630b47aa/1518312883299/?format=500w">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Ethiopian Guji</h5>
                             <p><span class="coffeeDesc">This Guji is complex, beautifully fruity and aromatic, just like our fully washed Guji, but with all those classic natural process qualities.</span> It has floral aromatics and sweet tropical fruit notes. These fruits are also present
@@ -644,13 +637,13 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01 coffeeCount" value="" required>
+                                        <label class="font-weight-bold">QTY</label>
+                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="size form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <label class="font-weight-bold">SIZE</label>
+                                        <select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" class="size" id="12oz">12oz</option>
                                       <option value="16oz" class="size" id="16oz">16oz</option>
                                       <option value="20oz" class="size" id="20oz">20oz</option>
@@ -666,7 +659,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card flex-fill m-3" id="coffee5">
-                        <img class="card-img-top" src="https://us.123rf.com/450wm/amawasri/amawasri1501/amawasri150101032/35688739-studio-shot-of-coffee-beans-in-a-bag.jpg?ver=6" alt="Card image cap">
+                        <img class="card-img-top" src="https://us.123rf.com/450wm/amawasri/amawasri1501/amawasri150101032/35688739-studio-shot-of-coffee-beans-in-a-bag.jpg?ver=6">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Arabian Mocha Sanani</h5>
                             <p><span class="coffeeDesc">>Water process, complex, chocolaty notes. This ancient blend makes a distinguished decaf.</span> Mocca beans from the birthplace of coffee, Ethiopia, come together with their Javanese descendants to create a complex brew as rich as
@@ -674,13 +667,13 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <label class="font-weight-bold">QTY</label>
+                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <label class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" class="size" id="12oz">12oz</option>
                                       <option value="16oz" class="size" id="16oz">16oz</option>
                                       <option value="20oz" class="size" id="20oz">20oz</option>
@@ -696,7 +689,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card m-3 flex-fill" id="coffee6">
-                        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/roasted-coffee-beans-burlap-sack-fresh-coffee-beans-77431651.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/roasted-coffee-beans-burlap-sack-fresh-coffee-beans-77431651.jpg">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Sumatra Aceh Tengah</h5>
                             <p><span class="coffeeDesc">In contrast to the classic Sumatra profile dominated by notes of earth, cedar, and bell pepper, Ketiara’s coffees often feature fruit tones</span> ranging from cherry and grape to citrus and pineapple, combined with lively acidity
@@ -704,13 +697,13 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <label class="font-weight-bold">QTY</label>
+                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <label class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" class="size" id="12oz">12oz</option>
                                       <option value="16oz" class="size" id="16oz">16oz</option>
                                       <option value="20oz" class="size" id="20oz">20oz</option>
@@ -726,7 +719,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card flex-fill m-3" id="coffee7">
-                        <img class="card-img-top" src="https://static1.squarespace.com/static/541a230ce4b0bb0e99120b6e/55c2bf4be4b02ce3fcfdb04f/5622e017e4b09501ec5a3976/1445126172168/kars-coffee-roasted-beans-in-burlap-bag.jpg?format=750w" alt="Card image cap">
+                        <img class="card-img-top" src="https://static1.squarespace.com/static/541a230ce4b0bb0e99120b6e/55c2bf4be4b02ce3fcfdb04f/5622e017e4b09501ec5a3976/1445126172168/kars-coffee-roasted-beans-in-burlap-bag.jpg?format=750w">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Kopi Luwak</h5>
                             <p><span class="coffeeDesc">Stale, average, plain old coffee for twenty times the price! Just buy Folgers...</span>
@@ -736,13 +729,13 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <label class="font-weight-bold">QTY</label>
+                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <label class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" class="size" id="12oz">12oz</option>
                                       <option value="16oz" class="size" id="16oz">16oz</option>
                                       <option value="20oz" class="size" id="20oz">20oz</option>
@@ -758,7 +751,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card flex-fill m-3" id="coffee8">
-                        <img class="card-img-top" src="http://cdn.nhanongxanh.vn/wp-content/uploads/2018/07/3830_coffee_beans_bag_scoop_326070713_1200px.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="http://cdn.nhanongxanh.vn/wp-content/uploads/2018/07/3830_coffee_beans_bag_scoop_326070713_1200px.jpg">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Kona</h5>
                             <p><span class="coffeeDesc">100% Kona Coffee beans from Hawaii's Kona Coast. Our Hawaiian Kona Coffee is selected from the best of the Kona Coffee harvests.</span> These big, flavorful Kona Coffee beans are expertly roasted to produce a consistent and truly
@@ -766,13 +759,13 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <label class="font-weight-bold">QTY</label>
+                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <label class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" placeholder="12oz" value="12oz" required>
                                       <option value="12oz" class="size" id="12oz">12oz</option>
                                       <option value="16oz" class="size" id="16oz">16oz</option>
                                       <option value="20oz" class="size" id="20oz">20oz</option>
@@ -788,7 +781,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex">
                     <div class="card flex-fill m-3" id="coffee9">
-                        <img class="card-img-top" src="http://www.nascas.si/wp-content/uploads/2018/03/kava.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="http://www.nascas.si/wp-content/uploads/2018/03/kava.jpg">
                         <div class="card-body text-center">
                             <h5 class="card-title food-title">Costa Rican Tarrazu</h5>
                             <p><span class="coffeeDesc">Our medium roast, allows the caramelized sugars to rise to the surface of the beans and highlight a chocolaty flavor with surprising hints of citrusy grapefruit.</span> The resulting cup has a good body and a marked low-tone acidity
@@ -796,13 +789,13 @@
                             <form class="order">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">QTY</label>
-                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" id="validationServer01" value="" required>
+                                        <label class="font-weight-bold">QTY</label>
+                                        <input type="number" min="1" oninput="this.value = Math.abs(this.value)"  class="qty form-control is-valid text-center" value="" required>
                                         <div class="valid-feedback"></div>
                                     </div>
                                     <div class="col-md-12 mb-3">
-                                        <label for="validationServer01" class="font-weight-bold">SIZE</label>
-                                        <select class="form-control is-valid" id="validationServer01" placeholder="12oz" value="12oz" required>
+                                        <label class="font-weight-bold">SIZE</label>
+                                        <select class="form-control is-valid" placeholder="12oz" value="12oz" required>
                                           <option value="12oz" class="size" id="12oz">12oz</option>
                                           <option value="16oz" class="size" id="16oz">16oz</option>
                                           <option value="20oz" class="size" id="20oz">20oz</option>
