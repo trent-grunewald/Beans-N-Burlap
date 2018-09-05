@@ -18,6 +18,7 @@
 
 body{
   background: #f7f7f7;
+  min-width: 345px;
 }
 
 .modal-head{
@@ -249,11 +250,21 @@ a:hover{
   font-family: 'Cinzel Decorative', cursive;
   font-weight: 600;
 }
+@media (max-width: 450px) {
+  .food-title{
+    font-size: 10vw;
+  }
+}
 
 .white-text{
   color: #582a1a;
   text-shadow: 2px 2px 7px #100300;
   font-family: 'Cinzel Decorative', cursive;
+}
+@media (max-width: 450px) {
+  .white-text{
+    font-size: 10vw;
+  }
 }
 
 .food-description{
