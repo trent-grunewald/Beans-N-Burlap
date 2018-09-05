@@ -27,14 +27,17 @@
 						<form action="#" method="post">
 							<div class="row">
 								<div class="col-md-6">
+									<label for="name"></label>
 									<input type="text" class="form-control is-valid" placeholder="Your Name" name="name" id="customerName" required>
 								</div>
 								<div class="col-md-6">
+									<label for="phone"></label>
 									<input type="text" class="form-control is-valid" placeholder="Phone Number" id="customerNumber" name="phone" required>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
+									<label for="menuType"></label>
 									<select class="menuType form-control is-valid" id="breakfast">
 										<option value=''>Select your menu</option>
 										<option value="Breakfast">Breakfast</option>
@@ -43,6 +46,7 @@
 									</select>
 								</div>
 								<div class="col-md-6">
+									<label for="menuItem"></label>
 									<select class="entree form-control is-valid" id="menuItem" name="menuItem">
 										<option value=''>Select your entree</option>
 										<div class="valid-feedback"></div>
@@ -51,6 +55,7 @@
 							</div>
 							<div class="row">
 								<div class="col-md-6">
+									<label for="coffee"></label>
 									<select class="form-control is-valid" id="coffee" name="coffeeMenu" required>
 										<option value="">Coffee</option>
 										<option value="ethiopian guji">Ethiopian Guji</option>
@@ -63,6 +68,7 @@
 									</select>
 								</div>
 								<div class="col-md-6">
+									<label for="time"></label>
 									<input type="text" class="form-control is-valid" placeholder="Estimated arrival" name="time" required>
 								</div>
 							</div>
@@ -488,12 +494,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="cartInput col-md-12 mb-3">
-										<label class="font-weight-bold">QTY</label>
+										<label for="qty" class="font-weight-bold">QTY</label>
 										<input type="number" min="1" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz"><span class="test">12oz</span>
 											</option>
@@ -516,12 +522,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="cartInput col-md-12 mb-3">
-										<label name="qty" class="font-weight-bold">QTY</label>
+										<label for="qty" name="qty" class="font-weight-bold">QTY</label>
 										<input type="number" min="1" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz">12oz</option>
 											<option value="16oz" class="size" id="16oz">16oz</option>
@@ -543,12 +549,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">QTY</label>
+										<label for="qty" class="font-weight-bold">QTY</label>
 										<input type="number" min="1" max="40" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz">12oz</option>
 											<option value="16oz" class="size" id="16oz">16oz</option>
@@ -570,12 +576,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">QTY</label>
-										<input type="number" min="1" oninput="this.value = Math.abs(this.value)" class="qty form-control is-valid text-center" id="coffeeCount" value="" required>
+										<label for="qty" class="font-weight-bold">QTY</label>
+										<input type="number" min="1" oninput="this.value = Math.abs(this.value)" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz">12oz</option>
 											<option value="16oz" class="size" id="16oz">16oz</option>
@@ -597,12 +603,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">QTY</label>
+										<label for="qty" class="font-weight-bold">QTY</label>
 										<input type="number" min="1" oninput="this.value = Math.abs(this.value)" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz">12oz</option>
 											<option value="16oz" class="size" id="16oz">16oz</option>
@@ -624,12 +630,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">QTY</label>
+										<label for="qty" class="font-weight-bold">QTY</label>
 										<input type="number" min="1" oninput="this.value = Math.abs(this.value)" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz">12oz</option>
 											<option value="16oz" class="size" id="16oz">16oz</option>
@@ -653,12 +659,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">QTY</label>
+										<label for="qty" class="font-weight-bold">QTY</label>
 										<input type="number" min="1" oninput="this.value = Math.abs(this.value)" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz">12oz</option>
 											<option value="16oz" class="size" id="16oz">16oz</option>
@@ -680,12 +686,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">QTY</label>
+										<label for="qty" class="font-weight-bold">QTY</label>
 										<input type="number" min="1" oninput="this.value = Math.abs(this.value)" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz">12oz</option>
 											<option value="16oz" class="size" id="16oz">16oz</option>
@@ -707,12 +713,12 @@
 							<form class="order">
 								<div class="form-row">
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">QTY</label>
+										<label for="qty" class="font-weight-bold">QTY</label>
 										<input type="number" min="1" oninput="this.value = Math.abs(this.value)" class="qty form-control is-valid text-center" value="" required>
 										<div class="valid-feedback"></div>
 									</div>
 									<div class="col-md-12 mb-3">
-										<label class="font-weight-bold">SIZE</label>
+										<label for="size" class="font-weight-bold">SIZE</label>
 										<select class="size form-control is-valid" placeholder="12oz" value="12oz" required>
 											<option value="12oz" class="size" id="12oz">12oz</option>
 											<option value="16oz" class="size" id="16oz">16oz</option>
