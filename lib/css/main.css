@@ -18,11 +18,11 @@
 
 body{
   background: #f7f7f7;
-  min-width: 345px;
+  min-width: 327px;
 }
 
 .modal-head{
-	background: url(https://images.freecreatives.com/wp-content/uploads/2016/03/Dark-Grunge-Burlap-Texture.jpg) center center no-repeat;
+	background: url(/lib/css/images/burlap.jpg) center center no-repeat;
 	background-size: cover;
 }
 
@@ -137,7 +137,7 @@ a:hover{
 #landing{
   width: 100%;
   height: 60vh;
-  background: url(https://images2.alphacoders.com/659/thumb-1920-659075.jpg) no-repeat center center;
+  background: url(/lib/css/images/main.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -205,6 +205,13 @@ a:hover{
     }
   }
 
+	#nav-breakfast-tab{
+		border-radius: 17px 0 0 0;
+	}
+
+	#nav-coffee-tab{
+		border-radius: 0 17px 0 0;
+	}
 
 .fav{
   font-size: .75rem;
@@ -216,7 +223,7 @@ a:hover{
   width: 100%;
   height: 100%;
   color: #fff;
-  background: url(https://images.alphacoders.com/659/thumb-1920-659072.jpg) no-repeat center center;
+  background: url(/lib/css/images/main2.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -272,7 +279,7 @@ a:hover{
 }
 
 #menubg{
-  background: url(https://ocdn.eu/pulscms-transforms/1/Ig5ktkqTURBXy8yYzNlZDJhYTlkM2M4MGFjNmMwNTBjMzlhNjFiYWRjMS5qcGVnkpUDAADNEQDNCZCTBc0DUs0B3g) no-repeat;
+  background: url(/lib/css/images/main3.jpg) no-repeat;
   background-size: cover;
   padding-top: 3%;
   padding-bottom: 6%;
@@ -318,7 +325,7 @@ background-color: #f7f7f7;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  color: #f7f7f7
+  color: #f7f7f7;
   background-color: #4e362b;
   border-color: #f7f7f7;
 }
@@ -326,7 +333,6 @@ background-color: #f7f7f7;
 .text-brown{
   color: #4e362b;
 }
-
 
 .card-img-top{
 	border-bottom-left-radius: 50%;
@@ -339,7 +345,7 @@ background-color: #f7f7f7;
 }
 
 #baristas{
-  background: url(https://i1.wp.com/lichfieldsfurniture.co.uk/wp-content/uploads/2016/10/Cafe-background-1.jpg) no-repeat center top fixed;
+  background: url(/lib/css/images/main4.jpg) no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -360,7 +366,7 @@ background-color: #f7f7f7;
 }
 
 .footer{
-  background: url(https://chromethemer.com/wallpapers/chromebook-wallpapers/download/coffee-beans-3840x2160.jpg) center center no-repeat;
+  background: url(/lib/css/images/foot.jpg) center center no-repeat;
   background-size: cover;
 }
 
